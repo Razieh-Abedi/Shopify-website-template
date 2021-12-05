@@ -150,7 +150,7 @@ img#video-logo {
 /* Changes to the second section of the main: online business section */
 #online-business {
   background: #004c3f;
-  height: 1200px;
+  height: 1000px;
   margin: 0;
   color: white;
   padding: 87px;
@@ -203,29 +203,70 @@ img#video-logo {
 }
 
 #buttom-online-business {
-  height: 100px;
+  height: 400px;
+  margin-top: 100px;
+  margin-bottom: 70px;
+  /* width: 296px; */
 }
-#buttom-heading {
+#buttom-online-business h2 {
   text-align: left;
-  margin: 30px 60px;
+  font-weight: unset;
+  font-size: 25pt;
 }
 
-#path-forward {
+#path-forward-columns {
   display: flex;
   justify-content: space-evenly;
+  /* width: 296px; */
+  /* flex-wrap: wrap; */
+  margin-top: 50px;
+  margin-bottom: 100px;
+  align-items: center;
+  font-size: 14pt;
 }
+#path-forward-columns div {
+  width: 100%;
+}
+
+/* Changes to the third section of main, sales platform */
 #sale-platform {
   height: 1500px;
   background: white;
   color: black;
 }
-#platform {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+#sales-platform-first {
+  text-align: center;
+  margin: 100px;
+}
+#sales-platform-first h2 {
+  font-size: 30pt;
+  font-weight: unset;
+  font-family: initial;
+}
+#sales-platform-first p {
+  font-family: initial;
+  font-size: 13pt;
+  /* width: 30%; */
   text-align: center;
 }
-
+#sales-platform-second {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 200px;
+}
+#sales-platform-second-left {
+  width: 50%;
+  display: flex;
+  padding: 50px;
+}
+#sales-platform-second-left img {
+  height: 300px;
+  width: 250px;
+}
+#sales-platform-second-right {
+  padding: 50px;
+}
 footer {
   background-color: black;
   height: 500px;
