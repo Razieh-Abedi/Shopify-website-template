@@ -84,12 +84,6 @@ nav ul ul li {
   width: 140px;
   margin-right: 40px;
 }
-/* I do not know this section 
-nav ul ul li {
-  width: 100px;
-  display: list-item;
-  position: relative;
-} */
 
 /* Changes to the first section of main: free trial */
 #intro-section {
@@ -249,7 +243,9 @@ img#video-logo {
   /* width: 30%; */
   text-align: center;
 }
-#sales-platform-second {
+#sales-platform-second,
+#sales-platform-third,
+#sales-platform-forth {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -267,8 +263,42 @@ img#video-logo {
 #sales-platform-second-right {
   padding: 50px;
 }
-footer {
-  background-color: black;
-  height: 500px;
-  color: white;
+#sales-platform-third {
+  display: flex;
+  margin: 80px;
+}
+
+#sales-platform-third-right img {
+  width: 200px;
+  height: 200px;
+}
+#sales-platform-third-left {
+  padding: 100px;
+}
+#sales-platform-third-left h3 {
+  font-size: 20pt;
+  font-weight: unset;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#sales-platform-third-left p {
+  text-align: center;
+  font-size: 13pt;
+}
+#sales-platform div a {
+  text-decoration: none;
+  color: green;
+}
+#sales-platform div a::after {
+  content: "  ⇨";
+  color: green;
+}
+
+#sales-platform-forth-left img {
+  width: 300px;
+  height: 400px;
+}
+#sales-platform-fifth img {
+  height: 700px;
+  width: 700px;
 }
