@@ -144,7 +144,7 @@ img#video-logo {
 /* Changes to the second section of the main: online business section */
 #online-business {
   background: #004c3f;
-  height: 1000px;
+  /* height: 1000px; */
   margin: 0;
   color: white;
   padding: 87px;
@@ -155,7 +155,7 @@ img#video-logo {
   cursor: pointer;
 }
 #top-online-business {
-  height: 150px;
+  /* height: 150px; */
 }
 #top-online-business h2 {
   font-weight: 400;
@@ -197,9 +197,9 @@ img#video-logo {
 }
 
 #buttom-online-business {
-  height: 400px;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  /* height: 400px; */
+  /* margin-top: 100px; */
+  /* margin-bottom: 70px; */
   /* width: 296px; */
 }
 #buttom-online-business h2 {
@@ -214,7 +214,7 @@ img#video-logo {
   /* width: 296px; */
   /* flex-wrap: wrap; */
   margin-top: 50px;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   align-items: center;
   font-size: 14pt;
 }
@@ -285,11 +285,12 @@ img#video-logo {
   text-align: center;
   font-size: 13pt;
 }
-#sales-platform div a {
+#sales-platform a {
   text-decoration: none;
   color: green;
+  cursor: pointer;
 }
-#sales-platform div a::after {
+#sales-platform a::after {
   content: "  ⇨";
   color: green;
 }
