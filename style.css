@@ -50,19 +50,25 @@ nav li {
   color: #74787c;
 }
 /* changes to the Dropdown */
-nav ul ul {
+.v-menu {
+  position: relative;
   display: none;
-  position: absolute;
-  background: white;
 }
-nav ul li:hover > ul {
-  display: list-item;
+.v-sub-menu {
+  position: absolute;
+  left: 170px;
+  top: 30px;
+  /* display: none; */
 }
 nav ul ul li {
   width: 170px;
   float: none;
   display: list-item;
-  position: relative;
+  /* position: relative; */
+}
+nav ul li:hover > ul {
+  display: list-item;
+  /* position: fixed; */
 }
 /* Changes to the button */
 .start-free-trial-btn {
@@ -77,6 +83,7 @@ nav ul ul li {
   cursor: pointer;
   text-align: center;
 }
+
 .start-free-trial-btn:hover {
   background: black;
 }
@@ -249,38 +256,56 @@ img#video-logo {
   line-height: 150%;
   font-weight: 400;
 }
-#sales-platform-second,
-#sales-platform-third,
-#sales-platform-forth {
+.column-sales-platforms {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 100px 200px;
+  margin: 60px 60px;
   width: 1200px;
   /* position: relative; */
 }
+#sales-platform-second p,
+#sales-platform-third p,
+#sales-platform-forth p {
+  font-size: 15pt;
+  text-align: left;
+  color: #6b7177;
+  line-height: 150%;
+  font-weight: 400;
+}
+#sales-platform-second h3,
+#sales-platform-third h3,
+#sales-platform-forth h3 {
+  font-size: 25pt;
+  font-family: sans-serif;
+  font-weight: 400;
+}
 #sales-platform-second-left {
   /* width: 50%; */
-  display: flex;
+  /* display: flex; */
   /* padding: 50px; */
   position: relative;
   width: 100%;
 }
 #sales-platform-second-left img {
   height: 400px;
-  width: 40%;
+  width: 50%;
   padding: 10px;
 }
 #sales-img1 {
   position: absolute;
+  top: 50px;
+  right: 40px;
 }
 #sales-platform-second-right {
   /* padding: 50px; */
   width: 100%;
+  margin: 20px;
+  padding: 30px;
 }
 #sales-platform-third {
   display: flex;
-  margin: 80px;
+  /* margin: 80px; */
 }
 
 #sales-platform-third-right img {
@@ -288,22 +313,17 @@ img#video-logo {
   height: 200px;
 }
 #sales-platform-third-left {
-  padding: 100px;
-}
-#sales-platform-third-left h3 {
-  font-size: 20pt;
-  font-weight: unset;
-  text-align: center;
-  margin-bottom: 40px;
-}
-#sales-platform-third-left p {
-  text-align: center;
-  font-size: 13pt;
+  margin: 20px;
+  padding: 30px;
 }
 #sales-platform a {
   text-decoration: none;
   color: green;
   cursor: pointer;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 15pt;
+  padding-top: 30px;
 }
 #sales-platform a::after {
   content: "  ⇨";
@@ -313,6 +333,10 @@ img#video-logo {
 #sales-platform-forth-left img {
   width: 300px;
   height: 400px;
+}
+#sales-platform-forth-right {
+  margin: 20px;
+  padding: 30px;
 }
 #sales-platform-fifth img {
   height: 700px;
