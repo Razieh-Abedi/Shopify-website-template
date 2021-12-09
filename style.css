@@ -233,7 +233,6 @@ img#video-logo {
 #sale-platform {
   height: 1500px;
   background: white;
-  color: black;
 }
 #sales-platform-first {
   text-align: center;
@@ -246,10 +245,8 @@ img#video-logo {
 }
 #sales-platform-first p {
   font-size: 15pt;
-  text-align: center;
   margin: 0;
   width: 40%;
-  text-align: center;
   position: relative;
   left: 30%;
   color: #6b7177;
@@ -261,7 +258,7 @@ img#video-logo {
   justify-content: space-between;
   align-items: center;
   margin: 60px 60px;
-  width: 1200px;
+  width: 1400px;
   /* position: relative; */
 }
 #sales-platform-second p,
@@ -281,11 +278,9 @@ img#video-logo {
   font-weight: 400;
 }
 #sales-platform-second-left {
-  /* width: 50%; */
-  /* display: flex; */
-  /* padding: 50px; */
   position: relative;
   width: 100%;
+  margin-left: 50px;
 }
 #sales-platform-second-left img {
   height: 400px;
@@ -298,23 +293,40 @@ img#video-logo {
   right: 40px;
 }
 #sales-platform-second-right {
-  /* padding: 50px; */
+  width: 80%;
+  padding: 150px;
+}
+#sales-platform-third-right {
   width: 100%;
-  margin: 20px;
-  padding: 30px;
-}
-#sales-platform-third {
+  position: relative;
+  right: -60px;
+  top: 20px;
   display: flex;
-  /* margin: 80px; */
+  justify-content: center;
 }
-
-#sales-platform-third-right img {
-  width: 200px;
+#sales-platform-third-right #img1 {
+  width: 150px;
   height: 200px;
+  position: absolute;
+  left: 200px;
+  top: -70px;
+}
+#sales-platform-third-right #img2 {
+  width: 350px;
+  height: 300px;
+}
+#sales-platform-third-right #img3 {
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  right: 250px;
+  bottom: -70px;
 }
 #sales-platform-third-left {
-  margin: 20px;
-  padding: 30px;
+  width: 35%;
+  padding: 60px;
+  position: relative;
+  right: -100px;
 }
 #sales-platform a {
   text-decoration: none;
@@ -331,14 +343,43 @@ img#video-logo {
 }
 
 #sales-platform-forth-left img {
-  width: 300px;
+  width: 600px;
   height: 400px;
+  position: relative;
+  left: 70px;
 }
 #sales-platform-forth-right {
-  margin: 20px;
-  padding: 30px;
+  width: 30%;
+  padding: 50px;
+  position: relative;
+  right: 150px;
 }
-#sales-platform-fifth img {
-  height: 700px;
-  width: 700px;
+#sales-platform-fifth {
+  position: relative;
+  left: 130px;
+  width: 40%;
+  /* margin: 120px 0; */
+  /* height: 500px; */
+}
+#sales-platform-fifth h2 {
+  font-family: sans-serif;
+  font-size: 22pt;
+  font-weight: 500;
+}
+#sales-platform-fifth p {
+  font-family: sans-serif;
+  font-size: 15pt;
+  font-weight: 400;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+#sales-platform-sixth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1000px;
+}
+#sales-platform-sixth img {
+  height: 900px;
+  width: 900px;
 }
