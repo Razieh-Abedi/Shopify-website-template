@@ -26,6 +26,7 @@ nav {
 ul {
   margin: 0;
   list-style: none;
+  padding: 0;
 }
 li > a::after {
   content: " ˅";
@@ -51,25 +52,26 @@ nav li {
 }
 /* changes to the Dropdown */
 .v-menu {
-  position: relative;
+  position: absolute;
   display: none;
+  background-color: white;
 }
 .v-sub-menu {
+  width: 215px;
+  display: none;
   position: absolute;
   left: 170px;
   top: 30px;
+  background-color: white;
   /* display: none; */
 }
-nav ul ul li {
-  width: 170px;
-  float: none;
-  display: list-item;
-  /* position: relative; */
+.super-menu li:hover .v-menu {
+  display: block;
 }
-nav ul li:hover > ul {
-  display: list-item;
-  /* position: fixed; */
+.v-menu li:hover .v-sub-menu {
+  display: block;
 }
+
 /* Changes to the button */
 .start-free-trial-btn {
   border-radius: 5px;
@@ -508,4 +510,22 @@ img#video-logo {
 }
 #text-help div {
   padding: 40px;
+}
+/* section test */
+#journey div {
+  text-align: center;
+  padding: 80px 0;
+  font-family: sans-serif;
+}
+#journey div h2 {
+  margin: 0;
+  color: black;
+  font-size: 23pt;
+}
+#journey div p {
+  margin: 20px auto;
+  color: darkgray;
+  font-size: 14pt;
+  width: 40%;
+  line-height: 1.5;
 }
