@@ -241,22 +241,19 @@ img#video-logo {
 }
 #sales-platform-first {
   text-align: center;
-  margin: 100px;
+  padding: 80px 0;
+  font-family: sans-serif;
 }
 #sales-platform-first h2 {
+  margin: 0;
   font-size: 30pt;
-  font-family: sans-serif;
-  font-weight: 400;
 }
 #sales-platform-first p {
   font-size: 15pt;
-  margin: 0;
+  margin: 15px auto;
   width: 40%;
-  position: relative;
-  left: 30%;
   color: #6b7177;
-  line-height: 150%;
-  font-weight: 400;
+  line-height: 1.5;
 }
 .column-sales-platforms {
   display: flex;
@@ -362,24 +359,23 @@ img#video-logo {
   right: 150px;
 }
 #sales-platform-fifth {
-  position: relative;
+  /* position: relative;
   left: 130px;
   width: 40%;
   line-height: 1.5;
-  /* margin: 120px 0; */
-  /* height: 500px; */
+  height: 500px; */
+  font-family: sans-serif;
+  padding: 40px 0;
+  width: 40%;
+  margin-left: 170px;
+  line-height: 1.5;
 }
 #sales-platform-fifth h2 {
-  font-family: sans-serif;
   font-size: 22pt;
-  font-weight: 500;
 }
 #sales-platform-fifth p {
-  font-family: sans-serif;
   font-size: 15pt;
-  font-weight: 400;
-  margin-top: 40px;
-  padding-bottom: 40px;
+  margin: 40px 0;
 }
 #sales-platform-sixth {
   display: flex;
@@ -511,7 +507,7 @@ img#video-logo {
 #text-help div {
   padding: 40px;
 }
-/* section test */
+/* the sixth section of main: journey */
 #journey div {
   text-align: center;
   padding: 80px 0;
