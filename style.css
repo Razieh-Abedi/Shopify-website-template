@@ -14,6 +14,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 100;
+  box-shadow: 0px 6px 7px 0px #0000001c;
 }
 .super-menu {
   display: flex;
@@ -382,44 +383,31 @@ img#video-logo {
   margin: 40px 0;
 }
 #sales-platform-sixth {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 1000px;
+  text-align: center;
 }
 #sales-platform-sixth img {
-  height: 900px;
-  width: 900px;
+  height: 800px;
+  width: 800px;
+  border-radius: 70%;
 }
 /* the forth section of main section */
 #story {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: white; */
-  /* width: 1200px;
-  height: 700px; */
-  /* width: 100%;
-  height: 100%; */
+  padding: 30px;
 }
 #story-left {
   width: 50%;
-  height: 100%;
 }
 #story-left img {
   width: 100%;
-  height: 100%;
-  padding: 20px;
+  height: 50%;
 }
 #story-right {
+  background: hsl(169, 54%, 27%);
   width: 50%;
-  height: 100%;
-  color: #ffffff;
-  background: hsl(168, 100%, 9%);
-  margin: 50px 30px;
   padding: 50px 30px;
-  /* position: relative;
-  top: 50%; */
 }
 #story-right h2 {
   font-family: sans-serif;
@@ -482,34 +470,41 @@ img#video-logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background: #fbf7ed;
 }
 #pic-help img {
-  width: 250px;
-  height: 250px;
+  width: 550px;
+  height: 550px;
 }
 #text-help {
-  background: #fbf7ed;
-  width: 50%;
+  padding: 120px;
+  /* width: 50%; */
 }
 #text-help h2 {
-  font-size: 25pt;
+  font-size: 23pt;
   font-family: sans-serif;
   text-align: left;
-  line-height: 1.5;
   font-weight: bold;
-  padding: 40px 150px 40px 40px;
+  width: 60%;
+  margin: 0%;
+  /* padding: 40px 150px 40px 40px; */
 }
 #text-help p {
   color: #6b7177;
   font-size: 12pt;
   font-family: sans-serif;
+  margin: 0%;
+  margin-top: 20px;
 }
 #text-help h4 {
   font-family: sans-serif;
   font-weight: 450;
+  margin: 0%;
+  margin-top: 20px;
 }
 #text-help div {
-  padding: 40px;
+  margin-top: 20px;
+  /* padding: 40px; */
 }
 /* the sixth section of main: journey */
 #journey div {
@@ -528,4 +523,25 @@ img#video-logo {
   font-size: 14pt;
   width: 40%;
   line-height: 1.5;
+}
+/* footer */
+footer {
+  background: black;
+  color: white;
+  height: 700px;
+  padding: 30px 80px;
+  font-family: sans-serif;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+#top-footer li {
+  display: inline;
+  padding: 20px;
+  font-weight: bold;
+}
+#top-footer a:hover {
+  text-decoration: underline;
 }
