@@ -367,18 +367,17 @@ img#video-logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
 }
 
 #story-left img {
   width: 500px;
-  height: 50%;
+  height: 100%;
   padding: 10px;
 }
 #story-right {
   background: hsl(169, 54%, 27%);
   width: 45%;
-  padding: 50px 30px;
+  padding: 70px 30px;
   text-align: center;
   color: white;
 }
@@ -435,41 +434,42 @@ img#video-logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: #fbf7ed;
 }
 #pic-help img {
-  width: 550px;
+  width: 650px;
   height: 550px;
 }
 #text-help {
-  padding: 120px;
-  /* width: 50%; */
+  padding: 86px 80px;
+  background: #fbf7ed;
+  width: 40%;
 }
 #text-help h2 {
-  font-size: 23pt;
+  font-size: 25pt;
   font-family: sans-serif;
   text-align: left;
   font-weight: bold;
   width: 60%;
   margin: 0%;
-  /* padding: 40px 150px 40px 40px; */
 }
-#text-help p {
+#mini-columns {
+  display: flex;
+}
+#mini-columns p {
   color: #6b7177;
   font-size: 12pt;
   font-family: sans-serif;
   margin: 0%;
   margin-top: 20px;
 }
-#text-help h4 {
+#mini-columns h4 {
   font-family: sans-serif;
   font-weight: 450;
   margin: 0%;
   margin-top: 20px;
 }
-#text-help div {
+#mini-columns div {
   margin-top: 20px;
-  /* padding: 40px; */
 }
 /* the sixth section of main: journey */
 #journey div {
@@ -493,7 +493,7 @@ img#video-logo {
 footer {
   background: black;
   color: white;
-  height: 700px;
+  /* height: 700px; */
   padding: 30px 80px;
   font-family: sans-serif;
 }
@@ -509,4 +509,16 @@ footer a {
 }
 #top-footer a:hover {
   text-decoration: underline;
+}
+#middle-footer {
+  display: flex;
+}
+#online-store {
+  display: flex;
+}
+#middle-footer div {
+  padding: 50px;
+}
+#buttom-footer {
+  display: flex;
 }
