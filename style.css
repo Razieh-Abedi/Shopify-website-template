@@ -20,6 +20,16 @@ nav {
   display: flex;
   align-items: center;
 }
+.icon-chevron-down {
+  margin: 5px;
+  font-size: 11pt;
+  cursor: pointer;
+}
+.icon-chevron-right {
+  padding-left: 20px;
+  font-size: 8pt;
+  cursor: pointer;
+}
 #right-header {
   /* margin-right: 60px; */
   padding-right: 70px;
@@ -31,12 +41,15 @@ ul {
   list-style: none;
   padding: 0;
 }
-.super-menu li > a::after {
+li .fas {
+  font-size: 10pt;
+}
+/* .super-menu li > a::after {
   content: " ˅";
 }
 li > a:only-child::after {
   content: "";
-}
+} */
 nav a:hover {
   color: #000000;
 }
@@ -58,6 +71,9 @@ nav li {
   position: absolute;
   display: none;
   background-color: white;
+  box-shadow: 0 0 0 black;
+  box-shadow: 2px 4px 3px 3px #0f0f0f0d;
+  border-radius: 4px;
 }
 .v-sub-menu {
   width: 215px;
@@ -66,6 +82,8 @@ nav li {
   left: 170px;
   top: 30px;
   background-color: white;
+  box-shadow: 0px 0px 7px 5px #0f0f0f0d;
+  border-radius: 4px;
 }
 .super-menu li:hover .v-menu {
   display: block;
@@ -214,9 +232,12 @@ img#video-logo {
 #path-forward-columns {
   display: flex;
   justify-content: space-evenly;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   align-items: center;
   font-size: 14pt;
+}
+#path-forward-columns div {
+  width: 200px;
 }
 #path-forward-columns div p {
   width: 90%;
@@ -459,6 +480,11 @@ img#video-logo {
 }
 #mini-columns {
   display: flex;
+  flex-wrap: wrap;
+}
+#mini-columns div {
+  width: 40%;
+  padding: 0 30px 0 0;
 }
 #mini-columns p {
   color: #6b7177;
@@ -512,7 +538,7 @@ img#video-logo {
 footer {
   background: black;
   color: white;
-  padding: 30px 70px;
+  padding: 30px;
   font-family: sans-serif;
 }
 footer a {
@@ -524,9 +550,10 @@ footer a {
   display: inline;
   padding: 20px;
   font-weight: bold;
+  line-height: 70px;
 }
 #top-footer a:hover {
-  text-decoration: underline;
+  border-style: 2px solid white;
 }
 #middle-footer {
   display: flex;
@@ -534,7 +561,7 @@ footer a {
 }
 #middle-footer li {
   font-size: 12pt;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 #online-store {
@@ -542,14 +569,15 @@ footer a {
   justify-content: space-between;
 }
 #middle-footer div {
-  padding: 50px;
+  padding: 20px;
 }
 #buttom-footer {
   display: flex;
   justify-content: space-between;
 }
 #buttom-footer .fab,
-.fas {
+#buttom-footer .fas,
+.main-link .fas {
   background: white;
   color: black;
   font-size: 15pt;
