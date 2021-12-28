@@ -1,117 +1,12 @@
+@import url(header.css);
+@media screen and (max-width: 900px) {
+  #video-section {
+    display: none;
+  }
+}
 /* reset css */
 body {
   margin: 0;
-}
-/* changes to the navbar menu */
-/* general navbar settings*/
-nav {
-  background: #fbf7ed;
-  padding: 0 30px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0px 6px 7px 0px #0000001c;
-}
-.super-menu {
-  display: flex;
-  align-items: center;
-}
-.icon-chevron-down {
-  margin: 5px;
-  font-size: 11pt;
-  cursor: pointer;
-}
-.icon-chevron-right {
-  padding-left: 20px;
-  font-size: 8pt;
-  cursor: pointer;
-}
-#right-header {
-  /* margin-right: 60px; */
-  padding-right: 70px;
-  margin: 0%;
-}
-/* Changes to the lists */
-ul {
-  margin: 0;
-  list-style: none;
-  padding: 0;
-}
-li .fas {
-  font-size: 10pt;
-}
-/* .super-menu li > a::after {
-  content: " ˅";
-}
-li > a:only-child::after {
-  content: "";
-} */
-nav a:hover {
-  color: #000000;
-}
-nav a {
-  text-decoration: none;
-  color: #74787c;
-  font-family: initial;
-  font-weight: 400;
-}
-nav li {
-  padding: 5px;
-  margin: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  color: #74787c;
-}
-/* changes to the Dropdown */
-.v-menu {
-  position: absolute;
-  display: none;
-  background-color: white;
-  box-shadow: 0 0 0 black;
-  box-shadow: 2px 4px 3px 3px #0f0f0f0d;
-  border-radius: 4px;
-}
-.v-sub-menu {
-  width: 215px;
-  display: none;
-  position: absolute;
-  left: 170px;
-  top: 30px;
-  background-color: white;
-  box-shadow: 0px 0px 7px 5px #0f0f0f0d;
-  border-radius: 4px;
-}
-.super-menu li:hover .v-menu {
-  display: block;
-}
-.v-menu li:hover .v-sub-menu {
-  display: block;
-}
-
-/* Changes to the button */
-.start-free-trial-btn {
-  border-radius: 5px;
-  background: #2e8b57;
-  padding: 10px;
-  margin: 10px;
-  color: white;
-  font-weight: bold;
-  font-size: 16px;
-  border: 1px solid transparent;
-  cursor: pointer;
-  text-align: center;
-}
-
-.start-free-trial-btn:hover {
-  background: black;
-}
-#btn-menu {
-  width: 140px;
-  margin-right: 40px;
 }
 
 /* Changes to the first section of main: free trial */
