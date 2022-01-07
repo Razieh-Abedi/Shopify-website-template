@@ -63,7 +63,6 @@ img#video-logo {
 /* Changes to the second section of the main: online business section */
 #online-business {
   background: #004c3f;
-  /* height: 1100px; */
   margin: 0;
   color: white;
   padding: 87px;
@@ -78,25 +77,24 @@ img#video-logo {
   font-weight: 400;
   font-size: 2.5em;
   margin: 0;
-  padding: 30px 0 10px 0;
+  padding: 60px 0 10px 0;
 }
 #top-online-business div {
   font-size: 11pt;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0%;
+  padding: 0;
+  padding-bottom: 30px;
+}
+#top-online-business .fa-arrow-right {
+  color: white;
+  padding: 5px;
+}
+#top-online-business-b {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 96%;
-  margin: 0%;
-  padding: 0;
-  padding-bottom: 50px;
 }
-
-#top-online-business div a::after {
-  content: "  ⇨";
-  color: white;
-}
-
 #middle-online-business {
   display: flex;
   justify-content: space-between;
@@ -108,11 +106,21 @@ img#video-logo {
 }
 .cards img {
   width: 100%;
+  cursor: pointer;
+  transform: scale(1);
+  box-shadow: none;
+  transition: transform 2s, box-shadow 3s;
+  border-radius: 2%;
+}
+.cards img:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 0px 4px 3px #fbf7ed;
 }
 .cards div {
   width: 100%;
   margin: 10px;
 }
+
 .main-link:hover {
   text-decoration: underline;
 }
@@ -146,6 +154,12 @@ img#video-logo {
 /* Changes to the third section of main, sales platform */
 #sales-platform img {
   border-radius: 5%;
+}
+.fa-arrow-right {
+  margin: 5px;
+  cursor: pointer;
+  color: green;
+  font-size: 15pt;
 }
 #sales-platform-first {
   text-align: center;
@@ -238,14 +252,10 @@ img#video-logo {
   cursor: pointer;
   font-weight: bold;
   font-family: sans-serif;
-  font-size: 15pt;
+  font-size: 13pt;
   padding-top: 30px;
 }
-.sales-platform-text-column div a,
-#text-help a::after {
-  content: "  ⇨";
-  color: green;
-}
+
 #sales-platform-forth {
   padding: 50px;
 }
@@ -277,7 +287,11 @@ img#video-logo {
 #sales-platform-sixth img {
   height: 500px;
   width: 500px;
-  border-radius: 3%;
+  transform: rotateY(0);
+  transition: transform 20s;
+}
+#sales-platform-sixth img:hover {
+  transform: rotateY(360deg);
 }
 /* the forth section of main section */
 #story {
@@ -323,11 +337,12 @@ img#video-logo {
   font-weight: 300;
   text-align: center;
   padding: 10px;
-  background-color: #002e25;
+  background: #002e25;
   color: #ffffff;
   border-radius: 3%;
   border: 1px solid white;
   margin: 40px 0;
+  transition: background 2s, color 2.5s;
 }
 #story-right > button > img {
   width: 20px;
@@ -357,14 +372,11 @@ img#video-logo {
   height: 550px;
 }
 #text-help {
-  padding: 86px 80px;
+  padding: 70px 20px 60px 60px;
   background: #fbf7ed;
-  width: 40%;
+  width: 48%;
 }
-.fas {
-  color: green;
-  font-size: 12pt;
-}
+
 #text-help h2 {
   font-size: 25pt;
   font-family: sans-serif;
@@ -378,8 +390,8 @@ img#video-logo {
   flex-wrap: wrap;
 }
 #mini-columns div {
-  width: 40%;
-  padding: 0 30px 0 0;
+  width: 20em;
+  padding: 0 10px 0 0;
 }
 #mini-columns p {
   color: #6b7177;
@@ -431,9 +443,9 @@ img#video-logo {
 }
 /* footer */
 footer {
-  background: black;
+  background: #002e25;
   color: white;
-  padding: 30px;
+  padding: 10px 25px 30px 25px;
   font-family: sans-serif;
 }
 footer a {
@@ -441,14 +453,25 @@ footer a {
   text-decoration: none;
   cursor: pointer;
 }
+#top-footer {
+  border-bottom: 1px solid rgba(210, 213, 217, 0.1);
+  /* padding-bottom: 10px; */
+}
+
 #top-footer li {
   display: inline;
-  padding: 20px;
+  /* padding: 30px; */
   font-weight: bold;
   line-height: 70px;
 }
+#top-footer a {
+  padding: 20px;
+  border-bottom: none;
+  transition: border-bottom 2s;
+}
+
 #top-footer a:hover {
-  border-style: 2px solid white;
+  border-bottom: 1px solid white;
 }
 #middle-footer {
   display: flex;
@@ -457,6 +480,18 @@ footer a {
 #middle-footer li {
   font-size: 12pt;
   padding: 10px;
+}
+.footer-h {
+  font-weight: bold;
+  color: white;
+}
+#middle-footer a {
+  color: #b6babf;
+  cursor: pointer;
+  transition: color 1.5s;
+}
+#middle-footer a:hover {
+  color: white;
 }
 
 #online-store {
@@ -475,12 +510,23 @@ footer a {
 .main-link .fas {
   background: white;
   color: black;
-  font-size: 15pt;
+  font-size: 13pt;
   border-radius: 50%;
   padding: 5px;
   margin: 7px;
+  cursor: pointer;
 }
-.r-b-footer {
+.r-b-footer a {
   padding: 5px;
   margin: 10px;
+  color: #b6babf;
+  transition: color 1.5s;
+}
+.r-b-footer a:hover {
+  color: white;
+}
+#buttom-footer .fa-sort-down {
+  background: none;
+  color: white;
+  font-size: 22pt;
 }
