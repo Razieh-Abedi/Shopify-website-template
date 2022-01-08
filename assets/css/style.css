@@ -360,6 +360,17 @@ img#video-logo {
   text-align: center;
   font-size: 15pt;
 }
+/* logo section */
+#outer-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 80px;
+}
+.logo {
+  width: 100px;
+  height: 55px;
+}
 
 /* the fifth section of the main section: help */
 #help {
@@ -369,7 +380,7 @@ img#video-logo {
 }
 #pic-help img {
   width: 650px;
-  height: 550px;
+  height: 574px;
 }
 #text-help {
   padding: 70px 20px 60px 60px;
