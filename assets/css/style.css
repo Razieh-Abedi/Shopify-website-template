@@ -79,21 +79,16 @@ img#video-logo {
   margin: 0;
   padding: 60px 0 10px 0;
 }
-#top-online-business div {
-  font-size: 11pt;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0%;
-  padding: 0;
-  padding-bottom: 30px;
-}
+
 #top-online-business .fa-arrow-right {
   color: white;
-  padding: 5px;
 }
 #top-online-business-b {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
+  font-size: 14pt;
 }
 #middle-online-business {
   display: flex;
@@ -104,13 +99,18 @@ img#video-logo {
   margin: 0;
   width: 245px;
 }
+.image-box {
+  border-radius: 10px;
+  height: 83%;
+  overflow: hidden;
+  margin: 0 !important;
+}
 .cards img {
   width: 100%;
+  height: 100%;
   cursor: pointer;
   transform: scale(1);
   transition: transform 2s, box-shadow 3s;
-  border-radius: 2%;
-  overflow: hidden;
 }
 .cards img:hover {
   transform: scale(1.3);
@@ -137,7 +137,6 @@ img#video-logo {
   flex-wrap: wrap;
   align-items: center;
   font-size: 14pt;
-  width: 1256px;
 }
 #path-forward-columns div {
   width: 200px;
@@ -156,7 +155,7 @@ img#video-logo {
   border-radius: 5%;
 }
 .fa-arrow-right {
-  margin: 5px;
+  margin-left: 8px;
   cursor: pointer;
   color: green;
   font-size: 15pt;
@@ -487,6 +486,7 @@ footer a {
 #middle-footer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 #middle-footer li {
   font-size: 12pt;
@@ -508,6 +508,7 @@ footer a {
 #online-store {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 #middle-footer div {
   padding: 20px;
@@ -547,4 +548,18 @@ footer a {
   background-color: red;
   padding: 40px;
   font-size: 20pt;
+}
+
+/* /////////////////////////////////////////// */
+.explorer {
+  display: flex;
+}
+.explorer div {
+  padding: 0 !important;
+}
+.footer-site-credit {
+  text-align: center;
+  margin: auto;
+  display: block;
+  width: 50%;
 }
